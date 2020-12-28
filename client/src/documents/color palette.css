@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.New-Years-Eve-1-hex { color: #FF9532; }
+.New-Years-Eve-2-hex { color: #FFEB2F; }
+.New-Years-Eve-3-hex { color: #D81A97; }
+.New-Years-Eve-4-hex { color: #00FFF0; }
+.New-Years-Eve-5-hex { color: #04CC1B; }
+
+/* Color Theme Swatches in RGBA */
+.New-Years-Eve-1-rgba { color: rgba(255, 149, 49, 1); }
+.New-Years-Eve-2-rgba { color: rgba(255, 235, 47, 1); }
+.New-Years-Eve-3-rgba { color: rgba(216, 26, 151, 1); }
+.New-Years-Eve-4-rgba { color: rgba(0, 255, 239, 1); }
+.New-Years-Eve-5-rgba { color: rgba(4, 204, 26, 1); }
+
+/* Color Theme Swatches in HSLA */
+.New-Years-Eve-1-hsla { color: hsla(28, 100, 59, 1); }
+.New-Years-Eve-2-hsla { color: hsla(54, 100, 59, 1); }
+.New-Years-Eve-3-hsla { color: hsla(320, 78, 47, 1); }
+.New-Years-Eve-4-hsla { color: hsla(176, 100, 50, 1); }
+.New-Years-Eve-5-hsla { color: hsla(126, 96, 40, 1); }

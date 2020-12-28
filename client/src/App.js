@@ -1,22 +1,19 @@
-import React, { useState, useEffect } from "react";
-import socketIOClient from "socket.io-client";
-const ENDPOINT = "http://localhost:4001";
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-function App() {
-  const [response, setResponse] = useState("");
+import { LanguageProvider } from './containers/Language';
+import { Lobby } from './pages/Lobby/Lobby.js';
+import { Playground } from './pages/Playground/Playground.js';
 
-  useEffect(() => {
-    const socket = socketIOClient(ENDPOINT);
-    socket.on("FromAPI", data => {
-      setResponse(data);
-    });
-  }, []);
+const App = () => (
+  <LanguageProvider>
+  <Router>
+    <Switch>
+      <Route path='/play' component={Playground} />
+      <Route path='/' component={Lobby} />
+      </Switch>
+  </Router>
+  </LanguageProvider>
+)
 
-  return (
-    <p>
-      It's <time dateTime={response}>{response}</time>
-    </p>
-  );
-}
-
-export default App;
+export default App

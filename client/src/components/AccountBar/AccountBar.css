@@ -1,0 +1,4 @@
+.accountbar {
+    display: flex;
+    flex-direction: row;
+}
